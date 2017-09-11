@@ -24,14 +24,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN4-rb-KA5">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIc-hl-JiU"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-lM-zpH">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efh-3b-mNU"/>
                                                 </connections>
@@ -42,14 +42,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baq-N4-h4F">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awV-mc-eck"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-vs-3O6">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-aA-LTM"/>
                                                 </connections>
@@ -60,14 +60,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTa-kC-bVD">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wV-C9-FOm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9o-jp-AUJ">
                                                 <state key="normal" title="Button" image="back"/>
-                                                <state key="highlighted" image="dog"/>
+                                                <state key="highlighted" image="back"/>
                                                 <connections>
                                                     <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toU-QB-teJ"/>
                                                 </connections>
@@ -101,6 +101,5 @@
     </scenes>
     <resources>
         <image name="back" width="183" height="275"/>
-        <image name="dog" width="400" height="600"/>
     </resources>
 </document>

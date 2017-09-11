@@ -21,15 +21,41 @@ class ViewController: UIViewController {
     
     @IBOutlet var cards: [UIButton]!
 
-    var numOfCardsFlipped = 0
+ 
+    
+    var previousButton:UIButton?
     
     @IBAction func cardTapped(_ sender: UIButton) {
-        let img = sender.image(for: .highlighted)
-       
-        sender.setImage(img, for: .normal)
-        numOfCardsFlipped += 1
-        print("Tapped")
+//        let img = sender.image(for: .highlighted)
+//        //sender.setImage(img, for: .normal)
+//        sender.setImage(img, for: .disabled)
         sender.isEnabled = false
+        
+        if previousButton == nil{
+            //first card...
+            //save the previous button
+            previousButton = sender
+        }else{
+            
+            //explicitly unwrapped optional.
+            //let p:UIButton = previousButton!
+            
+            // let img: UIImage? = previousButton?.image(for: .disabled)
+            
+            //we have 2 buttons: //sender, previous button
+            if previousButton?.image(for: .disabled) == sender.image(for: .disabled){
+                print("Good")
+            }else{
+                print("Bad")
+                sender.isEnabled = true
+                previousButton?.isEnabled = true
+            }
+            
+            previousButton = nil
+            //lets compare the images...
+            //print(Good, Bad)
+            //previous button = nil
+        }
     }
     
     
@@ -50,7 +76,7 @@ class ViewController: UIViewController {
         
         for card in cards{
             //let idx = rand(max: gameImages.count)
-            card.setImage(gameImages.remove(at: 0), for: .highlighted)
+            card.setImage(gameImages.remove(at: 0), for: .disabled)
         }
     }
 
