@@ -26,38 +26,37 @@ class ViewController: UIViewController {
     var previousButton:UIButton?
     
     @IBAction func cardTapped(_ sender: UIButton) {
-//        let img = sender.image(for: .highlighted)
-//        //sender.setImage(img, for: .normal)
-//        sender.setImage(img, for: .disabled)
-        sender.isEnabled = false
-        
+        sender.isEnabled = false //show disabled image and the button is not clickable!
+        //first card...
         if previousButton == nil{
-            //first card...
-            //save the previous button
-            previousButton = sender
+            previousButton = sender //save the previous button
         }else{
-            
-            //explicitly unwrapped optional.
-            //let p:UIButton = previousButton!
-            
-            // let img: UIImage? = previousButton?.image(for: .disabled)
-            
-            //we have 2 buttons: //sender, previous button
+            //if the images match:
             if previousButton?.image(for: .disabled) == sender.image(for: .disabled){
                 print("Good")
             }else{
-                print("Bad")
-                sender.isEnabled = true
-                previousButton?.isEnabled = true
+//                print("Bad")
+//                sender.isEnabled = true
+//                previousButton?.isEnabled = true
+                
+                
+               //A)
+               DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                    sender.isEnabled = true
+                    self.previousButton?.isEnabled = true
+                    //self.previousButton = nil
+               })
             }
             
-            previousButton = nil
-            //lets compare the images...
-            //print(Good, Bad)
-            //previous button = nil
+            //B)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                self.previousButton = nil
+            })
         }
     }
     
+    //1) write 2 functions A) And B)
+    //2) refactor all the code to work with readable ,  maintainable methods.
     
     override func viewDidLoad() {
         super.viewDidLoad()
