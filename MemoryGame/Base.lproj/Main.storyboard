@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3Do-gt-Hjm">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D56-Bu-ftK">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN4-rb-KA5">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIc-hl-JiU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-lM-zpH">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efh-3b-mNU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FK4-17-dFX">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baq-N4-h4F">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awV-mc-eck"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OC-vs-3O6">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-aA-LTM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-kK-UeB">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTa-kC-bVD">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wV-C9-FOm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9o-jp-AUJ">
+                                                <state key="normal" title="Button" image="back"/>
+                                                <state key="highlighted" image="dog"/>
+                                                <connections>
+                                                    <action selector="cardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toU-QB-teJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Do-gt-Hjm" secondAttribute="trailing" constant="8" id="Bn1-dm-dje"/>
+                            <constraint firstItem="3Do-gt-Hjm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="MH1-Er-ch6"/>
+                            <constraint firstAttribute="bottom" secondItem="3Do-gt-Hjm" secondAttribute="bottom" constant="8" id="MNm-HZ-QM4"/>
+                            <constraint firstItem="3Do-gt-Hjm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="b3i-lt-hgE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="cards" destination="Pc0-lM-zpH" collectionClass="NSMutableArray" id="q0c-jN-62l"/>
+                        <outletCollection property="cards" destination="baq-N4-h4F" collectionClass="NSMutableArray" id="6uv-Or-skT"/>
+                        <outletCollection property="cards" destination="2OC-vs-3O6" collectionClass="NSMutableArray" id="puV-NJ-XZj"/>
+                        <outletCollection property="cards" destination="zTa-kC-bVD" collectionClass="NSMutableArray" id="tjJ-GO-2N8"/>
+                        <outletCollection property="cards" destination="N9o-jp-AUJ" collectionClass="NSMutableArray" id="cKB-dR-64O"/>
+                        <outletCollection property="cards" destination="aN4-rb-KA5" collectionClass="NSMutableArray" id="F2a-o0-zGY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="183" height="275"/>
+        <image name="dog" width="400" height="600"/>
+    </resources>
+</document>
